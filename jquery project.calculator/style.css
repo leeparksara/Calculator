@@ -1,0 +1,80 @@
+#container{
+display: grid;
+ box-shadow:  3px 2px rgb(192, 192, 192);
+  padding: 0px 12px 20px 20px;
+   height: 380px;
+   width:280px ;
+   background-color: rgb(243, 243, 243);
+    margin: 10%;
+    justify-content: center;
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+   
+    
+}
+
+#display{
+height: 100px;
+line-height: 10px;
+width: 293px;
+margin-top: 10px;
+border:  grey;
+border-radius: 10px;
+
+color: black;
+
+}
+#buttons{
+    display: grid;
+    width:300px;
+    
+    row-gap: 4%;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+
+}
+
+button{
+    border-radius: 50%;
+    border: transparent;
+    text-align: center;
+    height: 40px;
+    width: 43px;
+    background-color: rgb(201, 199, 199);
+    font-size: 25px;
+    background-image: linear-gradient(to right, #ccc, #fff);
+    outline: none;
+    box-shadow: 1px 1px rgb(90, 88, 88);
+}
+button:hover{
+    cursor: pointer;
+    background-color:rgb(104, 104, 104) ;
+    color: white;
+    transition: 4s ease-in-out;
+}
+#Alc{
+    color: red;
+}
+#bracket{
+    color: green;
+}
+#procent{
+    color: green;
+}
+
+#divide{
+    color: green;
+}
+#multi{
+    color: green;
+}
+#minus{
+    color: green;
+}
+#plus{
+    color: green;
+}
+#equal{
+    color: green;
+}

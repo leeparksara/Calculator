@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    
+    <script>
+      $(function(){
+
+        $('.clc').on('click',function(){
+        $('#display').val($('#display').val() + $(this).html() );
+
+        });
+
+     $('.clear').on('click', function(){
+
+     $('#display').val('');
+
+     });
+     $("#multi").on("click",function(){
+                var x = parseInt($(".clc").val());
+                var y = parseInt($(".clc").val());
+                $("#display").html(x*y);
+            });
+
+     $('#equal').on('click',function(){
+     var expression = $("#display").val();
+     $("#display").val(eval(expression));
+
+
+     });
+
+    
+
+      });
+
+
+
+    </script>
+</head>
+<body>
+   
+   <div id="container">
+        <input type="text" id="display" value="" readonly>
+        <div id="buttons">
+        <button type="button"  class="clear" id="Alc">C</button>
+        <button type="button"  id="bracket"  class="clc">()</button>
+        <button type="button" id="procent" class="clc">%</button>
+        <button type="button" class="clc" id="divide">/</button>
+        <button type="button" class="clc">7</button>
+        <button type="button" class="clc">8</button>
+        <button type="button" class="cl c">9</button>
+        <button type="button" class="clc" id="multi"  >*</button>
+        <button type="button" class="clc">4</button>
+        <button type="button" class="clc">5</button>
+        <button type="button" class="clc">6</button>
+        <button type="button" class="clc" id="minus">-</button>
+        <button type="button" class="clc">1</button>
+        <button type="button" class="clc">2</button>
+        <button type="button" class="clc">3</button>
+        <button type="button" class="clc" id="plus">+</button>
+        <button type="button" class="clc" id="negativ">+/-</button>
+        <button type="button" class="clc">0</button>
+        <button type="button"  id="point">.</button>
+        <button type="button"  id="equal">=</button>
+        
+
+    </div>
+   </div>
+
+</body>
+</html>
